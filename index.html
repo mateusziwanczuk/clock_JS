@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="image">
-        <img src="background.jpeg">
+        <img class="neon" src="background.jpeg">
     </div>
     <div class="header">
         <p class="quote">"Time is an illusion."</p>
@@ -97,6 +97,31 @@
         transition: all 0.05s;
         transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
         width: 50%;
+    }
+
+    .neon {
+        animation: neon 4s 3s infinite linear;
+    }
+
+    @keyframes neon {
+        o% {opacity: 0;}
+        5% {opacity: 1;}
+        20% {opacity: 1;}
+        25% {opacity: 0.5;}
+        30% {opacity: 0.5;}
+        32% {opacity: 1;}
+        45% {opacity: 1;}
+        46% {opacity: 0.5;}
+        54% {opacity: 0.5;}
+        55% {opacity: 1;}
+        77% {opacity: 1;}
+        88% {opacity: 0;}
+        90% {opacity: 1;}
+        93% {opacity: 1;}
+        95% {opacity: 0;}
+        97% {opacity: 0;}
+        98% {opacity: 1;}
+        100% {opacity: 0;}
     }
 </style>
 
